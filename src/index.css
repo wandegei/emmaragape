@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-light: 20 50% 98%; /* Creamy white */
+  --foreground-light: 340 5% 20%; /* Dark Pinkish Gray */
+  --primary-light: 330 80% 60%; /* Vibrant Pink */
+  --secondary-light: 120 40% 60%; /* Soft Green */
+  --accent-light: 45 100% 60%; /* Sunny Yellow */
+
+  --background-dark: 340 10% 10%; /* Deep Burgundy */
+  --foreground-dark: 20 50% 90%; /* Off-white */
+  --primary-dark: 330 70% 70%; /* Lighter Pink */
+  --secondary-dark: 120 30% 40%; /* Muted Green */
+  --accent-dark: 45 90% 70%; /* Brighter Yellow */
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: var(--background-dark);
+  --foreground: var(--foreground-dark);
+  --primary: var(--primary-dark);
+  --secondary: var(--secondary-dark);
+  --accent: var(--accent-dark);
+  --card: 340 10% 15%;
+  --card-foreground: var(--foreground-dark);
+  --popover: 340 10% 15%;
+  --popover-foreground: var(--foreground-dark);
+  --primary-foreground: var(--background-dark);
+  --secondary-foreground: var(--background-dark);
+  --muted: 340 5% 30%;
+  --muted-foreground: 20 30% 70%;
+  --accent-foreground: var(--background-dark);
+  --destructive: 0 70% 50%;
+  --destructive-foreground: var(--foreground-dark);
+  --border: 340 10% 25%;
+  --input: 340 10% 25%;
+  --ring: var(--primary-dark);
+}
+
+:root {
+  --background: var(--background-light);
+  --foreground: var(--foreground-light);
+  --primary: var(--primary-light);
+  --secondary: var(--secondary-light);
+  --accent: var(--accent-light);
+  --card: 0 0% 100%;
+  --card-foreground: var(--foreground-light);
+  --popover: 0 0% 100%;
+  --popover-foreground: var(--foreground-light);
+  --primary-foreground: var(--background-light);
+  --secondary-foreground: var(--background-light);
+  --muted: 20 30% 90%;
+  --muted-foreground: 340 5% 40%;
+  --accent-foreground: var(--background-light);
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: var(--foreground-light);
+  --border: 20 20% 85%;
+  --input: 20 20% 85%;
+  --ring: var(--primary-light);
+}
+
+
+body {
+  @apply bg-background text-foreground;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dark .glass-effect {
+  background: rgba(30, 30, 40, 0.3); /* Darker glass for dark mode */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.floral-pattern {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FBCFE8' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .floral-pattern {
+   background-image: 
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23A21CAF' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+.primary-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+}
+
+.section-padding {
+  @apply py-12 px-4 sm:px-6 lg:py-20 lg:px-8;
+}
+
+.cta-button {
+  @apply inline-block px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl;
+}
+
+.secondary-button {
+  @apply inline-block px-8 py-3 border border-primary text-primary bg-transparent hover:bg-pink-100 dark:hover:bg-primary/20 transition-colors text-base font-medium rounded-md shadow-sm hover:shadow-md;
+}
+
+.card-hover-effect {
+  @apply transition-all duration-300 ease-in-out hover:shadow-2xl hover:-translate-y-1;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  @apply block w-full px-4 py-3 rounded-md shadow-sm border-border focus:ring-primary focus:border-primary sm:text-sm;
+  @apply bg-background/80 dark:bg-card;
+}
