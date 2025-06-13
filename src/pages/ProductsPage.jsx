@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
         <p className={`mb-4 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'} text-sm h-16 overflow-hidden`}>{product.description}</p>
         <Button 
           className="w-full primary-gradient text-white"
-          onClick={() => alert('🚧 This feature isn\'t implemented yet—but don\'t worry! You can request it in your next prompt! 🚀')}
+          onClick={() => alert('🚧 This feature isn\'t implemented yet—but don\'t worry! Still working on it')}
         >
           <ShoppingCart className="w-4 h-4 mr-2" /> Add to Cart
         </Button>
