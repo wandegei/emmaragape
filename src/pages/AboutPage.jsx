@@ -38,7 +38,10 @@ const AboutPage = () => {
             <h2 className="text-3xl font-['Playfair_Display'] font-semibold mb-6 text-gray-800 dark:text-white">Our Story</h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
               Agape Flower was born from a deep-seated love for nature's artistry and the joy flowers bring to people's lives. 
-              Founded in [Year, e.g., 2015], we started as a small local shop with a big dream: to deliver not just flowers, but emotions, 
+              Founded in <span style={{ fontWeight: 'bold', color: 'rgb(23, 189, 185)', fontSize: '18px' }}>
+                2024
+              </span>
+              , we started as a small local shop with a big dream: to deliver not just flowers, but emotions, 
               beautifully packaged and thoughtfully arranged.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -84,13 +87,13 @@ const AboutPage = () => {
           <div className="flex flex-wrap justify-center gap-8">
             {/* Placeholder for team members */}
             <div className={`p-6 rounded-lg shadow-lg text-center w-64 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
-              <img  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" alt="Team member Jane Doe" src="https://images.unsplash.com/photo-1603098437768-4b9ba6b4d179" />
-              <h4 className="text-lg font-semibold font-['Poppins'] text-gray-700 dark:text-gray-200">Jane Doe</h4>
+              <img  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" alt="Team member Nansamba Mary" src="https://images.unsplash.com/photo-1603098437768-4b9ba6b4d179" />
+              <h4 className="text-lg font-semibold font-['Poppins'] text-gray-700 dark:text-gray-200">Nansamba Mary</h4>
               <p className="text-sm text-primary">Lead Florist</p>
             </div>
             <div className={`p-6 rounded-lg shadow-lg text-center w-64 ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}>
-              <img  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" alt="Team member John Smith" src="https://images.unsplash.com/photo-1702501987500-a8af39795497" />
-              <h4 className="text-lg font-semibold font-['Poppins'] text-gray-700 dark:text-gray-200">John Smith</h4>
+              <img  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" alt="Team member John Nangoli Emma" src="https://images.unsplash.com/photo-1702501987500-a8af39795497" />
+              <h4 className="text-lg font-semibold font-['Poppins'] text-gray-700 dark:text-gray-200">John Nangoli Emma</h4>
               <p className="text-sm text-primary">Customer Relations</p>
             </div>
           </div>

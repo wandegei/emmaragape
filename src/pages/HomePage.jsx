@@ -16,7 +16,7 @@ const FeaturedFlowerCard = ({ name, description, price, imageSrc, altText }) => 
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <img  className="w-full h-64 object-cover" alt={altText} src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+      <img  className="w-full h-64 object-cover" alt={altText} src="https://i.ebayimg.com/images/g/lbAAAeSweYJoFeLl/s-l1600.webp" />
       <div className="p-6">
         <h3 className="text-2xl font-['Playfair_Display'] font-bold mb-2 text-primary">{name}</h3>
         <p className={`mb-3 ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'} text-sm`}>{description}</p>
@@ -51,7 +51,7 @@ const HomePage = () => {
         <img 
           className="absolute inset-0 w-full h-full object-cover filter brightness-50"
           alt="Beautiful assortment of colorful flowers as a hero background"
-         src="https://images.unsplash.com/photo-1556868713-d7f308ffd867" />
+         src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/cmccmpeiyharswdmxfgi.jpg" />
         <div className="relative z-10 p-8 max-w-3xl mx-auto">
           <motion.h1 
             initial={{ y: -50, opacity: 0 }}

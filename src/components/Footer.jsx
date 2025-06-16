@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="list-none mb-10 space-y-3">
               <li className="flex items-center justify-center md:justify-start">
                 <Phone className="w-4 h-4 mr-2 text-primary" />
-                <span>+254 700 000 000</span>
+                <span>+256780252324</span>
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <MessageCircle className="w-4 h-4 mr-2 text-primary" /> 
@@ -50,11 +50,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <Mail className="w-4 h-4 mr-2 text-primary" />
-                <span>hello@agapeflower.co</span>
+                <span>agapeflowers@29gmail.com</span>
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <MapPin className="w-4 h-4 mr-2 text-primary" />
-                <span>123 Flower St, Nairobi</span>
+                <span>Plot 122 Mbale City</span>
               </li>
             </ul>
           </div>

@@ -20,10 +20,10 @@ const ContactPage = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, text: "+254 700 000 000", href: "tel:+254700000000" },
-    { icon: MessageCircle, text: "Chat on WhatsApp", href: "https://wa.me/254700000000" }, // Placeholder link
-    { icon: Mail, text: "hello@agapeflower.co", href: "mailto:hello@agapeflower.co" },
-    { icon: MapPin, text: "123 Flower Street, Nairobi, Kenya", href: "#map" }, // Link to map section
+    { icon: Phone, text: "+256780252324", href: "tel:+256780252324" },
+    { icon: MessageCircle, text: "Chat on WhatsApp", href: "https://wa.me/256780252324" }, // Placeholder link
+    { icon: Mail, text: "agapeflowers@29gmail.com", href: "mailto:agapeflowers@29gmail.com" },
+    { icon: MapPin, text: "1Plot 122 Mbale City", href: "#map" }, // Link to map section
   ];
 
   return (
@@ -98,18 +98,27 @@ const ContactPage = () => {
               <p className="text-gray-700 dark:text-gray-300">Saturday: 10:00 AM - 4:00 PM</p>
               <p className="text-gray-700 dark:text-gray-300">Sunday & Public Holidays: Closed</p>
             </div>
-             <div id="map" className={`rounded-xl shadow-xl overflow-hidden h-64 ${theme === 'dark' ? 'bg-gray-800/70 glass-effect' : 'bg-white/70 glass-effect'}`}>
-              <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=36.8100%2C-1.2900%2C36.8300%2C-1.2700&layer=mapnik&marker=-1.283333,36.816667" // Example coordinates for Nairobi CBD
-                width="100%"
-                height="100%"
-                style={{ border:0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Shop Location Map"
-              ></iframe>
-            </div>
+             <div
+  id="map"
+  className={`rounded-xl shadow-xl overflow-hidden h-64 ${
+    theme === 'dark'
+      ? 'bg-gray-800/70 glass-effect'
+      : 'bg-white/70 glass-effect'
+  }`}
+>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127241.17559984164!2d34.09701375!3d1.0824159499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177fc1f59f93e4a9%3A0x2501a9b0d361cabc!2sMbale!5e0!3m2!1sen!2sug!4v1718526671771!5m2!1sen!2sug"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Mbale City Map"
+  ></iframe>
+</div>
+
+
           </motion.div>
         </div>
       </div>

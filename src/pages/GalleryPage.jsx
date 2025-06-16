@@ -80,7 +80,7 @@ const GalleryPage = () => {
                 className={`rounded-lg overflow-hidden shadow-lg cursor-pointer card-hover-effect aspect-square relative group ${theme === 'dark' ? 'bg-gray-800' : 'bg-white'}`}
                 onClick={() => setSelectedId(item.id)}
               >
-                <img  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" alt={item.altText} src="https://images.unsplash.com/photo-1580728371486-c17d7e73f619" />
+                <img  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" alt={item.altText} src="https://www.gardenia.net/wp-content/uploads/2023/05/rose-lady-of-shalott-ausnyson-300x300.webp" />
                 {item.type === 'testimonial' && (
                   <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p className="text-white text-center text-xs sm:text-sm p-2">&ldquo;{item.quote.substring(0,50)}...&rdquo;</p>

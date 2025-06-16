@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
       transition={{ duration: 0.4 }}
       className={`rounded-xl overflow-hidden shadow-lg card-hover-effect ${theme === 'dark' ? 'bg-gray-800 glass-effect' : 'bg-white'}`}
     >
-      <img  className="w-full h-72 object-cover" alt={product.altText} src="https://images.unsplash.com/photo-1671376354106-d8d21e55dddd" />
+      <img  className="w-full h-72 object-cover" alt={product.altText} src="https://artsyflora.com/cdn/shop/products/Ruby_Red-3_7a12efe9-b907-4cba-b709-8d3ddc7d4dba_1200x.jpg?v=1675282170" />
       <div className="p-6">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-['Playfair_Display'] font-bold text-primary">{product.name}</h3>
@@ -38,15 +38,15 @@ const ProductCard = ({ product }) => {
 const ProductsPage = () => {
   const { theme } = useTheme();
   const allProducts = [
-    { id: 1, name: "Ruby Red Roses", description: "A stunning bouquet of 12 long-stemmed ruby red roses.", price: "$59.99", category: "Bouquets", imageSrc: "Bouquet of 12 red roses", altText: "Ruby Red Roses Bouquet"},
-    { id: 2, name: "Pink Passion Roses", description: "Elegant bouquet featuring 24 delicate pink roses.", price: "$79.99", category: "Roses", imageSrc: "Bouquet of 24 pink roses", altText: "Pink Passion Roses Bouquet"},
-    { id: 3, name: "Luxury Gift Hamper", description: "Exquisite hamper with mixed flowers, chocolates, and a small teddy.", price: "$120.00", category: "Hampers", imageSrc: "Luxury gift hamper with flowers and chocolates", altText: "Luxury Gift Hamper"},
-    { id: 4, name: "Vibrant Tulip Mix", description: "A cheerful mix of colorful tulips to brighten any day.", price: "$45.00", category: "Bouquets", imageSrc: "Colorful mixed tulips in a vase", altText: "Vibrant Tulip Mix Bouquet"},
-    { id: 5, name: "White Lily Grace", description: "Symbol of purity, a classic bouquet of white lilies.", price: "$65.00", category: "Bouquets", imageSrc: "Classic white lily bouquet", altText: "White Lily Grace Bouquet"},
-    { id: 6, name: "Sunshine Yellow Roses", description: "A dozen bright yellow roses, perfect for friendship.", price: "$55.00", category: "Roses", imageSrc: "Dozen yellow roses in a bouquet", altText: "Sunshine Yellow Roses"},
-    { id: 7, "name": "Orchid Serenity Hamper", "description": "A sophisticated hamper featuring a potted orchid, fine tea, and biscuits.", "price": "$95.00", "category": "Hampers", "imageSrc": "Hamper with potted orchid and tea set", altText: "Orchid Serenity Hamper"},
-    { id: 8, "name": "Lavender Dreams Roses", "description": "Unique and enchanting lavender colored roses, a dozen.", "price": "$69.99", "category": "Roses", "imageSrc": "Bouquet of lavender roses", altText: "Lavender Dreams Roses Bouquet"},
-    { id: 9, "name": "Gourmet Delight Hamper", "description": "A lavish hamper filled with seasonal flowers, artisanal cheeses, crackers, and a bottle of wine.", "price": "$150.00", "category": "Hampers", "imageSrc": "Gourmet hamper with flowers cheese and wine", altText: "Gourmet Delight Hamper"},
+    { id: 1, name: "Ruby Red Roses", description: "A stunning bouquet of 12 long-stemmed ruby red roses.", price: "Sh 35000", category: "Bouquets", imageSrc: "Bouquet of 12 red roses", altText: "Ruby Red Roses Bouquet"},
+    { id: 2, name: "Pink Passion Roses", description: "Elegant bouquet featuring 24 delicate pink roses.", price: "sh25000", category: "Roses", imageSrc: "Bouquet of 24 pink roses", altText: "Pink Passion Roses Bouquet"},
+    { id: 3, name: "Luxury Gift Hamper", description: "Exquisite hamper with mixed flowers, chocolates, and a small teddy.", price: "sh35000", category: "Hampers", imageSrc: "Luxury gift hamper with flowers and chocolates", altText: "Luxury Gift Hamper"},
+    { id: 4, name: "Vibrant Tulip Mix", description: "A cheerful mix of colorful tulips to brighten any day.", price: "sh40000", category: "Bouquets", imageSrc: "Colorful mixed tulips in a vase", altText: "Vibrant Tulip Mix Bouquet"},
+    { id: 5, name: "White Lily Grace", description: "Symbol of purity, a classic bouquet of white lilies.", price: "sh50000", category: "Bouquets", imageSrc: "Classic white lily bouquet", altText: "White Lily Grace Bouquet"},
+    { id: 6, name: "Sunshine Yellow Roses", description: "A dozen bright yellow roses, perfect for friendship.", price: "sh30000", category: "Roses", imageSrc: "Dozen yellow roses in a bouquet", altText: "Sunshine Yellow Roses"},
+    { id: 7, "name": "Orchid Serenity Hamper", "description": "A sophisticated hamper featuring a potted orchid, fine tea, and biscuits.", "price": "sh45000", "category": "Hampers", "imageSrc": "Hamper with potted orchid and tea set", altText: "Orchid Serenity Hamper"},
+    { id: 8, "name": "Lavender Dreams Roses", "description": "Unique and enchanting lavender colored roses, a dozen.", "price": "sh55000", "category": "Roses", "imageSrc": "Bouquet of lavender roses", altText: "Lavender Dreams Roses Bouquet"},
+    { id: 9, "name": "Gourmet Delight Hamper", "description": "A lavish hamper filled with seasonal flowers, artisanal cheeses, crackers, and a bottle of wine.", "price": "sh15000", "category": "Hampers", "imageSrc": "Gourmet hamper with flowers cheese and wine", altText: "Gourmet Delight Hamper"},
   ];
 
   const categories = ["All", ...new Set(allProducts.map(p => p.category))];

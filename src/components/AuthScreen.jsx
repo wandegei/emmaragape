@@ -105,7 +105,7 @@ const AuthScreen = ({ onAuthSuccess, role }) => {
                     type="tel"
                     value={phoneNumber}
                     onChange={(e) => setPhoneNumber(e.target.value)}
-                    placeholder="+254 700 000 000"
+                    placeholder="+256780252324"
                     className="w-full px-4 py-3 bg-background/50 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <Smartphone className="absolute right-3 top-3 w-5 h-5 text-muted-foreground" />
